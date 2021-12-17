@@ -5,7 +5,7 @@ This project is licensed under the MIT License.
 ## How To Use
 * Go to project folder
 * Compile *main.c*
-* `executable` `type` `number` > `output.txt`
+* `executable` `type` `number`
 ## Important notes
 * `type` can be 1, 2 or 3
     * 1 - XXXXX-XXXXX-XXXXX
