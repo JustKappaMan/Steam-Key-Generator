@@ -58,7 +58,7 @@ int main(int argc, char const* argv[]) {
     switch (type) {
         case 1: {
             char emptyString[18];
-            for (;number; number--) {
+            for (;number; --number) {
                 generateKeyOne(emptyString);
                 printf("%s\n", emptyString);
             }
@@ -67,7 +67,7 @@ int main(int argc, char const* argv[]) {
 
         case 2: {
             char emptyString[30];
-            for (;number; number--) {
+            for (;number; --number) {
                 generateKeyTwo(emptyString);
                 printf("%s\n", emptyString);
             }
@@ -76,7 +76,7 @@ int main(int argc, char const* argv[]) {
 
         case 3: {
             char emptyString[19];
-            for (;number; number--) {
+            for (;number; --number) {
                 generateKeyThree(emptyString);
                 printf("%s\n", emptyString);
             }
@@ -98,7 +98,7 @@ bool isStringValid(const char* s) {
         return false;
     }
 
-    for (uint_fast8_t i = 0; s[i] != '\0'; i++) {
+    for (uint_fast8_t i = 0; s[i] != '\0'; ++i) {
         if (!isdigit(s[i])) {
             return false;
         }
@@ -108,7 +108,7 @@ bool isStringValid(const char* s) {
 }
 
 void generateKeyOne(char* const emptyString) {
-    for (uint_fast8_t i = 0; i < 18; i++) {
+    for (uint_fast8_t i = 0; i < 18; ++i) {
         emptyString[i] = ALL_CHARS[rand() % ALL_CHARS_LENGTH];
     }
 
@@ -118,7 +118,7 @@ void generateKeyOne(char* const emptyString) {
 }
 
 void generateKeyTwo(char* const emptyString) {
-    for (uint_fast8_t i = 0; i < 30; i++) {
+    for (uint_fast8_t i = 0; i < 30; ++i) {
         emptyString[i] = ALL_CHARS[rand() % ALL_CHARS_LENGTH];
     }
 
@@ -134,7 +134,7 @@ void generateKeyThree(char* const emptyString) {
     emptyString[1] = ALL_CHARS[rand() % NUMERIC_CHARS_LENGTH];
     emptyString[2] = ALL_CHARS[rand() % NUMERIC_CHARS_LENGTH];
 
-    for (uint_fast8_t i = 3; i < 15; i++) {
+    for (uint_fast8_t i = 3; i < 15; ++i) {
         emptyString[i] = ALL_CHARS[rand() % ALL_CHARS_LENGTH];
     }
 
