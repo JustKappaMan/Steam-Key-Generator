@@ -15,7 +15,7 @@ const uint_fast8_t NUMERIC_CHARS_LENGTH = 10;
 
 
 // Checks if string is a natural number from 1 to 999999
-bool isStringValid(const char* s);
+bool isValidString(const char* s);
 
 // Generates a key that matches pattern XXXXX-XXXXX-XXXXX
 void generateKeyOne(char* const emptyString);
@@ -36,7 +36,7 @@ int main(int argc, char const* argv[]) {
     const char* rawType = argv[1];
     uint_fast8_t type;
 
-    if (isStringValid(rawType)) {
+    if (isValidString(rawType)) {
         type = atoi(rawType);
     } else {
         printf("%s isn't a valid type! Check README for details.\n", rawType);
@@ -46,7 +46,7 @@ int main(int argc, char const* argv[]) {
     const char* rawNumber = argv[2];
     uint_fast32_t number;
 
-    if (isStringValid(rawNumber)) {
+    if (isValidString(rawNumber)) {
         number = atoi(rawNumber);
     } else {
         printf("%s isn't a valid number! Check README for details.\n", rawNumber);
@@ -93,7 +93,7 @@ int main(int argc, char const* argv[]) {
 }
 
 
-bool isStringValid(const char* s) {
+bool isValidString(const char* s) {
     if (strlen(s) > 6 || !strcmp(s, "0")) {
         return false;
     }
