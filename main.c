@@ -53,7 +53,7 @@ int main(int argc, char const* argv[]) {
         return 3;
     }
 
-    srand((uint_fast32_t) time(NULL));
+    srand((uint_fast32_t)time(NULL));
 
     switch (type) {
         case 1: {
