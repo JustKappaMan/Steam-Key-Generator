@@ -1,4 +1,6 @@
 # Steam Key Generator
+![MIT License](https://img.shields.io/github/license/JustKappaMan/Steam-Key-Generator)
+
 Useless but fast key generator for Steam.
 ## License
 This project is licensed under the MIT License.
