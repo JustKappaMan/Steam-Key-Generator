@@ -2,8 +2,7 @@
 ![MIT License](https://img.shields.io/github/license/JustKappaMan/Steam-Key-Generator)
 
 Useless but fast key generator for Steam.
-## License
-This project is licensed under the MIT License.
+
 ## How To Use
 * `executable` `type` `number`
 * `type` can be 1, 2 or 3
@@ -11,3 +10,9 @@ This project is licensed under the MIT License.
     * 2 - XXXXX-XXXXX-XXXXX-XXXXX-XXXXX
     * 3 - XXXXXXXXXXXXXXX XX
 * `number` is a natural number from 1 to 999999
+
+## Credits
+* [JetBrains](https://www.jetbrains.com) for [Open Source Development license](https://www.jetbrains.com/community/opensource)
+
+## License
+This project is licensed under the MIT License.
