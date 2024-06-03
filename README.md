@@ -11,8 +11,5 @@ Useless but fast key generator for Steam.
     * 3 - XXXXXXXXXXXXXXX XX
 * `number` is a natural number from 1 to 999999
 
-## Credits
-* [JetBrains](https://www.jetbrains.com) for [Open Source Development license](https://www.jetbrains.com/community/opensource)
-
 ## License
 This project is licensed under the MIT License.
